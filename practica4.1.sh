@@ -1,6 +1,7 @@
 #!/bin/bash
 
 cd /proc
+sudo su
 awk 'BEGIN{system("date")}' > /home/mem_lliure.lst
 for i in {60..1}; do
 	awk '/MemTotal/{memt=$2; print memt};/MemFree/{memf=$2; print memf; exit}' meminfo >> /home/mem_lliure.lst
