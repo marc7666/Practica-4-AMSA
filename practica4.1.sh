@@ -1,5 +1,5 @@
 #!/bin/bash
-if ['whoami' != "root" ]
+if [ 'whoami' != "root" ]
 then
 	echo "Executa com a root"
 	exit -1
@@ -15,3 +15,6 @@ for i in {60..1}; do
 done
 awk 'BEGIN{system("date")}' >> /home/mem_lliure.lst
 exit 0
+
+
+
