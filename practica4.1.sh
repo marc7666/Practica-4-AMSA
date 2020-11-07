@@ -1,5 +1,5 @@
 #!/bin/bash
-if [ 'whoami' != "root" ]
+if [ `whoami` != "root" ]
 then
 	echo "Executa com a root"
 	exit -1
