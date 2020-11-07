@@ -9,4 +9,5 @@ for i in {60..1}; do
 	sleep 1
 done
 awk 'BEGIN{system("date")}' >> /home/mem_lliure.lst
+rm -rf mem_lliure.lst
 exit 0
